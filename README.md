@@ -33,6 +33,7 @@ Optional:
 ## Build
 
 ```bash
+./configure
 make
 ```
 
