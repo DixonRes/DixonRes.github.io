@@ -38,7 +38,7 @@ make
 make install                       # optional
 ```
 
-The Makefile automatically detects required libraries. For more options, run `make help`.
+For more options, run `./configure --help` or `make help`.
 
 ---
 
