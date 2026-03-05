@@ -319,10 +319,19 @@ footer {
     <li><strong>Dixon resultant computation</strong> — variable elimination for multivariate polynomial systems</li>
     <li><strong>Polynomial system solver</strong> — solves n×n systems, enumerates all solutions over the given field</li>
     <li><strong>Ideal reduction mode</strong> — reduces the system via triangular ideal generators during elimination</li>
-    <li><strong>Prime fields F<sub>p</sub></strong> with p &lt; 2<sup>63</sup>, using FLINT's modular arithmetic</li>
-    <li><strong>Extension fields F<sub>p<sup>k</sup></sub></strong> such as GF(2<sup>8</sup>), GF(3<sup>5</sup>), with custom or default irreducible polynomials</li>
-    <li><strong>PML acceleration</strong> (optional) for polynomial matrix operations on prime field systems</li>
-    <li><strong>File input mode</strong> for scripted and batch computation</li>
+    <li>
+      <strong>Prime fields F<sub>p</sub></strong> (p &lt; 2<sup>63</sup>) 
+      with FLINT modular arithmetic, optionally accelerated by <strong>PML</strong>
+      for polynomial matrix operations.
+    </li>
+    <li>
+      <strong>Extension fields F<sub>p<sup>k</sup></sub></strong> with support for 
+      custom or default irreducible polynomials; additionally optimized 
+      implementations are provided for binary fields 
+      F<sub>2<sup>8</sup></sub>, F<sub>2<sup>16</sup></sub>, 
+      F<sub>2<sup>32</sup></sub>, F<sub>2<sup>64</sup></sub>, 
+      and F<sub>2<sup>128</sup></sub>.
+    </li>
   </ul>
 
   <hr>
@@ -356,13 +365,6 @@ footer {
     produce a timestamped <code>.dat</code> solution file containing
     field information, input polynomials, computation time, and results.
   </p>
-
-  <h2>Output</h2>
-  <ul class="feature-list">
-    <li>Command-line input → <code>solution_YYYYMMDD_HHMMSS.dat</code></li>
-    <li>File input <code>example.dat</code> → <code>example_solution_YYYYMMDD_HHMMSS.dat</code></li>
-  </ul>
-
   <p class="subtitle">
     More detailed descriptions of each mode are provided below.
   </p>
